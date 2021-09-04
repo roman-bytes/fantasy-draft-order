@@ -34,7 +34,7 @@ const Layout: FunctionComponent<LayoutProps> = ({
     return (
         <>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <div className="mx-auto max-w-4xl pt-0 px-4 pb-6">
+            <div className="mx-auto max-w-4xl pt-0 px-4 pb-6 bg-grar-200">
                 <main>{children}</main>
                 <footer>
                     © {new Date().getFullYear()}, Built with

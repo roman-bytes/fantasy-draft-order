@@ -50,12 +50,13 @@ const LiveGames = () => {
                         <div
                             key={event.id}
                             className={classNames(
-                                'w-full border shadow rounded p-3 m-4',
+                                'w-full border-2 shadow rounded p-3 m-4 bg-white',
                                 {
-                                    'border-green-900':
+                                    'border-green-600':
                                         event.status.type.completed,
                                     'border-red-700': !event.status.type
                                         .completed,
+                                    'bg-green-100': event.status.type.completed
                                 }
                             )}
                         >
