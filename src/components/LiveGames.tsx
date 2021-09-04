@@ -61,21 +61,63 @@ const LiveGames = () => {
                                 }
                             )}
                         >
-                            <div className="border-b pb-2 mb-2">
+                            <div className="border-b pb-2 mb-2 flex flex-row justify-between">
                                 <div>
                                     <h1 className="text-xl">{event.person}</h1>
                                     <div>
                                         {event.team} ({event.projected})
                                     </div>
                                 </div>
-                                <div>
-                                    <div>{event.competitions[0].competitors[0]}</div>
+                                <div className="flex flex-row">
+                                    <div className="border border-black flex flex-col items-center rounded">
+                                        <div className="uppercase border-b px-4 py-1 text-sm">
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[0].homeAway
+                                            }
+                                        </div>
+                                        <div>
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[0].team
+                                                    .abbreviation
+                                            }
+                                        </div>
+                                        <div className="bold text-3xl">
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[0].score
+                                            }
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center m-2">VS</div>
+                                    <div className="border border-black flex flex-col items-center rounded">
+                                        <div className="uppercase border-b px-4 py-1 text-sm">
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[1].homeAway
+                                            }
+                                        </div>
+                                        <div>
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[1].team
+                                                    .abbreviation
+                                            }
+                                        </div>
+                                        <div className="bold text-3xl">
+                                            {
+                                                event.competitions[0]
+                                                    .competitors[1].score
+                                            }
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <h2>{event.shortName}</h2>
                             <small>{event.name}</small>
                             <dl className="grid grid-cols-2 mt-5 border-t">
-                                <dt className="my-3">Time</dt>
+                                <dt className="my-3">Game Time</dt>
                                 <dd className="my-3">
                                     {event.status.type.detail}
                                 </dd>
