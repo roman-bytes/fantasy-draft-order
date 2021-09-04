@@ -2,9 +2,9 @@ require('ts-node').register({ files: true });
 
 module.exports = {
     siteMetadata: {
-        title: `Gatsby TypeScript Tailwind Starter`,
-        description: `Kick off your next, great Gatsby project with this starter. This barebones starter ships with the main Gatsby configuration files you might need, TypeScript and Tailwind CSS support.`,
-        author: `JagdCake`,
+        title: `Where Muh Pants`,
+        description: `Draft ranking`,
+        author: `Roman Bytes`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

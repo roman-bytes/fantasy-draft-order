@@ -1,0 +1,62 @@
+[
+    {
+        "person": "Matthew Fusilier",
+        "team": "Texas A&M",
+        "projected": 47
+    },
+    {
+        "person": "Nathan Vlcek",
+        "team": "Auburn",
+        "projected": 45.5
+    },
+    {
+        "person": "Seth Tippin",
+        "team": "Alabama",
+        "projected": 41.5
+    },
+    {
+        "person": "Kalan Guy",
+        "team": "Kentucky",
+        "projected": 42.5
+    },
+    {
+        "person": "Koz TheKozMAN Kozma",
+        "team": "Tennessee",
+        "projected": 47.5
+    },
+    {
+        "person": "Paul Cyrocki",
+        "team": "Colorado",
+        "projected": 45.5
+    },
+    {
+        "person": "Michael Porter",
+        "team": "Wake Forest",
+        "projected": 47
+    },
+    {
+        "person": "Isaac Scott",
+        "team": "Missouri",
+        "projected": 38.5
+    },
+    {
+        "person": "Jacob Roman",
+        "team": "Washington State",
+        "projected": 43
+    },
+    {
+        "person": "Jon Scott",
+        "team": "Cincinnati",
+        "projected": 37.5
+    },
+    {
+        "person": "Jonah Souza",
+        "team": "Oregon",
+        "projected": 41.5
+    },
+    {
+        "person": "Jaron Bradley",
+        "team": "Oklahoma",
+        "projected": 50.5
+    }
+]
