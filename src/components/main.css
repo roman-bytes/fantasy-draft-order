@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+    background: rgba(45, 55, 72, 1);
+}
