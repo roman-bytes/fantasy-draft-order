@@ -20,7 +20,7 @@ const filterGames = (liveGames, league) => {
 const LiveGames = () => {
     const { isLoading, error, data, isFetching } = useQuery('live-games', () =>
         fetch(
-            'http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?limit=100&dates=20210903-20210905'
+            'https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?limit=100&dates=20210903-20210905'
         )
             .then((res) => res.json())
             .then((res) => {
@@ -28,8 +28,6 @@ const LiveGames = () => {
                 return filterGames(events, league);
             })
     );
-
-    console.log('data', data);
 
     if (isLoading) {
         return <div>Loading......</div>;
