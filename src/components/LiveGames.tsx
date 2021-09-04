@@ -45,12 +45,12 @@ const LiveGames = () => {
             {isFetching ? (
                 <div>Fetching....</div>
             ) : (
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid md:grid-cols-2 gap-5 sm:grid-cols-1">
                     {data.map((event) => (
                         <div
                             key={event.id}
                             className={classNames(
-                                'w-full border-2 shadow rounded p-3 m-4 bg-white',
+                                'w-full border-2 shadow rounded p-3 sm:m-0 md:m-4 bg-white',
                                 {
                                     'border-green-600':
                                         event.status.type.completed,
